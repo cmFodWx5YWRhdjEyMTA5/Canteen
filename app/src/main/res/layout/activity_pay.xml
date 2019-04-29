@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Pay">
+
+
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/pay_tool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.Toolbar>
+    <View
+     android:background="@color/grey"
+     android:layout_width="match_parent"
+     android:layout_height="0.1dp"/>
+
+
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+  <RelativeLayout
+
+      android:layout_width="match_parent"
+      android:layout_height="110dp">
+
+      <LinearLayout
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentTop="true"
+          android:orientation="horizontal"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+          <TextView
+              android:textSize="16dp"
+              android:textStyle="bold"
+              android:text="Wallet : "
+              android:textColor="@color/black1"
+              android:gravity="center"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+
+          <TextView
+              android:id="@+id/wallet"
+              android:textColor="@color/black"
+              android:layout_marginLeft="10dp"
+              android:textSize="20dp"
+              android:textStyle="bold"
+              android:text="1000 "
+              android:gravity="center"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+
+          <TextView
+              android:textColor="@color/black"
+              android:layout_marginLeft="3dp"
+              android:textSize="13dp"
+              android:textStyle="bold"
+              android:text="Rs."
+              android:gravity="center"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_centerInParent="true"
+          android:orientation="vertical"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+
+          <TextView
+              android:textSize="14dp"
+              android:text="Amount to be paid"
+              android:gravity="center"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" />
+          <TextView
+              android:textSize="30dp"
+              android:id="@+id/totals"
+              android:textStyle="bold"
+              android:textColor="@color/colorPrimary"
+              android:text="@string/hello_blank_fragment"
+              android:gravity="center"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" />
+
+      </LinearLayout>
+      <LinearLayout
+          android:layout_alignParentRight="true"
+          android:layout_alignParentBottom="true"
+          android:orientation="horizontal"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+          <TextView
+              android:textSize="16dp"
+              android:textStyle="bold"
+              android:text="Remaining : "
+              android:textColor="@color/black1"
+              android:gravity="center"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+
+          <TextView
+              android:id="@+id/walletRemaining"
+              android:textColor="@color/black"
+              android:layout_marginLeft="10dp"
+              android:textSize="20dp"
+              android:textStyle="bold"
+              android:text="1000 "
+              android:gravity="center"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+
+          <TextView
+              android:textColor="@color/black"
+              android:layout_marginLeft="3dp"
+              android:textSize="13dp"
+              android:textStyle="bold"
+              android:text="Rs."
+              android:gravity="center"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+
+      </LinearLayout>
+
+  </RelativeLayout>
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+
+  <LinearLayout
+      android:layout_centerInParent="true"
+      android:layout_gravity="center"
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+      <View
+          android:gravity="bottom"
+          android:background="@color/grey"
+          android:layout_width="match_parent"
+          android:layout_height="0.1dp"/>
+      <ImageView
+          android:gravity="center"
+          android:layout_gravity="center"
+          android:id="@+id/generateqr"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent" />
+  </LinearLayout>
+
+
+
+
+       <LinearLayout
+           android:layout_alignParentBottom="true"
+           android:padding="2dp"
+           android:weightSum="2"
+           android:layout_width="match_parent"
+           android:layout_height="50dp">
+           <android.support.v7.widget.CardView
+               android:id="@+id/payCash"
+               android:layout_weight="1"
+               app:cardBackgroundColor="@color/colorPrimary"
+               android:layout_width="0dp"
+               android:layout_height="match_parent">
+               <TextView
+                   android:textColor="@color/white1"
+                   android:gravity="center"
+                   android:textStyle="bold"
+                   android:textSize="18dp"
+                   android:text="Pay in Cash"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent" />
+           </android.support.v7.widget.CardView>
+           <View
+               android:background="@color/white"
+               android:layout_width="0.2dp"
+               android:layout_height="match_parent"
+               />
+           <android.support.v7.widget.CardView
+               android:id="@+id/payWallet"
+               android:layout_weight="1"
+               app:cardBackgroundColor="@color/colorPrimary"
+               android:layout_width="0dp"
+               android:layout_height="match_parent">
+               <TextView
+                   android:textColor="@color/white1"
+                   android:gravity="center"
+                   android:textStyle="bold"
+                   android:textSize="18dp"
+                   android:text="Pay in wallet"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent" />
+           </android.support.v7.widget.CardView>
+       </LinearLayout>
+       </RelativeLayout>
+   </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/orderlist"
+        android:enabled="true"
+        android:icon="@drawable/ic_format_list_numbered_black_24dp"
+        android:title="orders"
+        app:showAsAction="ifRoom"/>
+      <item
+        android:id="@+id/completed"
+        android:enabled="true"
+        android:icon="@drawable/ic_menu_interface_symbol_of_four_horizontal_lines_with_dots"
+        android:title="history"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:visible="false"
+        android:id="@+id/accounts"
+        android:icon="@drawable/ic_user"
+        android:title="Account"
+        app:showAsAction="ifRoom"/>
+</menu>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="ld_activityScreenTitles">
+        <item>Canteen</item>
+        <item>Attendance</item>
+        <item>Library</item>
+        <item>Exit</item>
+    </string-array>
+    <string-array name="reports">
+        <item>Daily report</item>
+        <item>Monthly report</item>
+        <item>Student report</item>
+        <item>Items report</item>
+    </string-array>
+    <array name="ld_activityScreenIcons">
+        <item>@drawable/ic_room_service_black_24dp</item>
+        <item>@drawable/ic_laptop_chromebook_black_24dp</item>
+        <item>@drawable/ic_local_library_black_24dp</item>
+        <item>@drawable/ic_exit_to_app_black_24dp</item>
+    </array>
+    <string-array name="admin_items">
+        <item>Orders</item>
+        <item>History</item>
+        <item>Items</item>
+        <item>Reports</item>
+        <item>Exit</item>
+    </string-array>
+</resources>

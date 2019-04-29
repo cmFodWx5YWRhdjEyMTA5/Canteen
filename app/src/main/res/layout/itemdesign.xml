@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:gravity="center"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <RelativeLayout
+
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="120dp">
+            <FrameLayout
+                android:layout_marginTop="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="10dp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/bread"
+                        android:layout_gravity="center"
+                        android:layout_width="60dp"
+                        android:shape="ring"
+                        app:cardCornerRadius="30dp"
+                        android:layout_height="60dp">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_curry"
+                            />
+                    </android.support.v7.widget.CardView>
+
+
+
+                </LinearLayout>
+
+                <TextView
+
+                    android:id="@+id/quantity"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="top|right"
+                    android:background="@drawable/circle"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="4dp">
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs. "
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+                    <TextView
+
+                        android:id="@+id/itemPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="40"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/itemName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bread"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+</LinearLayout>

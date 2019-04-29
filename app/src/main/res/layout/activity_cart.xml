@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Canteens.cart.Cart">
+
+      <LinearLayout
+        android:weightSum="3"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+           <LinearLayout
+               android:weightSum="2"
+               android:layout_gravity="center"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+
+               <android.support.v7.widget.CardView
+
+                   android:layout_marginLeft="10dp"
+                   android:layout_gravity="center"
+                   app:cardCornerRadius="2dp"
+                   app:cardBackgroundColor="@color/colorPrimary"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+
+                   <TextView
+                       android:layout_marginRight="5dp"
+                       android:layout_marginLeft="3dp"
+                       android:layout_margin="4dp"
+                       android:textColor="@color/white1"
+                       android:textStyle="bold"
+                       android:textSize="16dp"
+                       android:text="Menu"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent" />
+
+
+               </android.support.v7.widget.CardView>
+
+               <LinearLayout
+                   android:gravity="right"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+                   <android.support.v7.widget.CardView
+                       android:layout_marginRight="10dp"
+                       android:layout_marginLeft="10dp"
+                       android:layout_gravity="center"
+                       android:gravity="right"
+                       app:cardCornerRadius="2dp"
+                       app:cardBackgroundColor="@color/colorPrimary"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content">
+
+                       <TextView
+                           android:id="@+id/help"
+                           android:layout_marginRight="5dp"
+                           android:layout_marginLeft="3dp"
+                           android:layout_margin="4dp"
+                           android:textColor="@color/white1"
+                           android:textStyle="bold"
+                           android:textSize="16dp"
+                           android:text="Help"
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent" />
+
+
+                   </android.support.v7.widget.CardView>
+               </LinearLayout>
+
+           </LinearLayout>
+        </LinearLayout>
+
+
+     <RelativeLayout
+
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+
+          <RelativeLayout
+              android:layout_marginBottom="60dp"
+
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+           <LinearLayout
+
+            android:background="@color/white1"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <FrameLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:weightSum="2"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ListView
+                            android:visibility="gone"
+                            android:id="@+id/listViewNames"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </ListView>
+
+                        <TextView
+                            android:id="@+id/myVivible"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Cart is empty"
+                            android:textSize="30dp" />
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_marginBottom="50dp"
+                        android:visibility="gone"
+                        android:id="@+id/cartRecycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </android.support.v7.widget.RecyclerView>
+
+
+                    <LinearLayout
+
+                        android:weightSum="1"
+                        android:orientation="vertical"
+                        android:layout_weight="0.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+                        <TextView
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center|start"
+                            android:layout_weight="0.3"
+                            android:textSize="16dp"
+                            android:text="+ Add more items"
+                            android:textColor="@color/orange"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp" />
+                        <View
+                            android:background="@color/grey"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.1dp"/>
+                        <LinearLayout
+                            android:layout_weight="0.3"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp">
+                            <TextView
+
+                                android:layout_marginLeft="10dp"
+                                android:textSize="16dp"
+                                android:layout_gravity="center"
+                                android:text="Sub Total (3 Items)"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+
+                                android:layout_marginRight="10dp"
+                                android:textSize="16dp"
+                                android:layout_gravity="center"
+                                android:gravity="end"
+                                android:text="Rs. 96"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_weight="0.4"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp">
+                            <TextView
+
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:layout_marginLeft="10dp"
+                                android:textSize="17dp"
+                                android:layout_gravity="center"
+                                android:text="Grand Total"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:layout_marginRight="10dp"
+                                android:textSize="16dp"
+                                android:gravity="end"
+                                android:layout_gravity="center"
+                                android:text="Rs. 96"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:background="@color/grey"
+                    android:gravity="bottom"
+                    android:layout_gravity="bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+
+                        android:id="@+id/toVisible"
+                        android:padding="4dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+
+
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="16dp"
+                            android:layout_marginRight="5dp"
+                            android:text="Total : "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/totalAmount"
+                            android:layout_marginLeft="4dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="bold"
+                            android:textSize="22dp"
+                            android:text="50"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="20dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="bold"
+                            android:textSize="13dp"
+                            android:text="Rs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+
+
+                </RelativeLayout>
+
+
+            </FrameLayout>
+
+
+
+
+
+        </LinearLayout>
+          </RelativeLayout>
+          <android.support.v7.widget.CardView
+
+              android:layout_alignParentBottom="true"
+              android:id="@+id/checkout"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:gravity="bottom"
+              android:layout_marginBottom="10dp"
+              app:cardBackgroundColor="@color/colorPrimary"
+              android:layout_width="match_parent"
+              android:layout_height="40dp">
+
+              <TextView
+                  android:textColor="@color/white1"
+                  android:textStyle="bold"
+                  android:textSize="18dp"
+                  android:gravity="center"
+                  android:text="PLACE ORDER"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent" />
+          </android.support.v7.widget.CardView>
+     </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
